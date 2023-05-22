@@ -47,3 +47,8 @@ jobs:
         run: |
             minikube service list
             minikube service app-service --url
+            
+      - name: Provision Prod
+        env:
+          name: The_end_of_deployment
+        uses: actions/checkout@v2
